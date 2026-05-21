@@ -1,13 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Home</title>
-</head>
-<body>
-    <h1>Welcome to Blog</h1>
-    <p>This is the home page.</p>
-</body>
-</html>
 
+{% extends "blog/base.html" %}
+
+
+{% block content %}
+
+    {% for x in posts %}
+
+        <article class="media content-section">
+
+            <img class="rounded-circle article-img"
+                 src="{{ x.author.profile.image.url }}"
+                 alt="author image">
+
+            <div class="media-body">
+
+                <div class="article-metadata">
+
+                    <a class="mr-2" href="#">
+                        {{ x.author }}
+                    </a>
+
+                    <small class="text-muted">
+                        {{ x.date_posted|date:"F d, Y" }}
+                    </small>
+
+                </div>
+
+                <h2>
+
+                    <a class="article-title" href="{% url 'blog-post-detail' x.pk %}">
+                        {{ x.title }}
+                    </a>
+
+                </h2>
+
+                <p class="article-content">
+                    {{ x.content }}
+                </p>
+
+            </div>
+
+        </article>
+
+    {% endfor %}
+
+{% endblock content %}
