@@ -1,0 +1,82 @@
+[
+    {
+        "model": "blog.post",
+        "pk": 1,
+        "fields": {
+            "title": "First Blog Post",
+            "content": "This is the content of the first blog post. Django makes backend development structured and powerful.",
+            "date_posted": "2026-05-20T10:00:00Z",
+            "author": 1
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 2,
+        "fields": {
+            "title": "Learning Django ORM",
+            "content": "The ORM helps us interact with the database using Python objects instead of raw SQL.",
+            "date_posted": "2026-05-20T12:00:00Z",
+            "author": 1
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 3,
+        "fields": {
+            "title": "Understanding Templates",
+            "content": "Templates separate backend logic from frontend rendering.",
+            "date_posted": "2026-05-21T08:00:00Z",
+            "author": 1
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 4,
+        "fields": {
+            "title": "Authentication System",
+            "content": "Django provides authentication, sessions, and security features out of the box.",
+            "date_posted": "2026-05-21T11:30:00Z",
+            "author": 1
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 5,
+        "fields": {
+            "title": "Signals in Django",
+            "content": "Signals help trigger automatic actions when events occur.",
+            "date_posted": "2026-05-22T09:00:00Z",
+            "author": 1
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 6,
+        "fields": {
+            "title": "Why Pagination Matters",
+            "content": "Pagination improves performance and user experience when many posts exist.",
+            "date_posted": "2026-05-22T14:00:00Z",
+            "author": 1
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 7,
+        "fields": {
+            "title": "Bootstrap Styling",
+            "content": "Bootstrap helps quickly create responsive UI components.",
+            "date_posted": "2026-05-23T07:00:00Z",
+            "author": 1
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 8,
+        "fields": {
+            "title": "Class Based Views",
+            "content": "Generic class based views reduce repetitive CRUD boilerplate.",
+            "date_posted": "2026-05-23T09:00:00Z",
+            "author": 1
+        }
+    }
+]

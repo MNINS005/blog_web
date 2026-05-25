@@ -19,3 +19,17 @@ body {
 .site-header .navbar-nav .nav-link.active {
     font-weight: 500;
 }
+.article-img{
+    width:50px !important;
+    height:50px !important;
+    border-radius:50%;
+    object-fit:cover;
+    margin-right:20px;
+}
+.content-section {
+    background: #ffffff;
+    padding: 15px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
